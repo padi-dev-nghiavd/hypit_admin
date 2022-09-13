@@ -1,0 +1,13 @@
+{
+    "name": "Creator",
+    "alias": "creator",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Creator\\Providers\\CreatorServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
