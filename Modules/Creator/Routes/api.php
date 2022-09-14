@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use Modules\Creator\Http\Controllers\Api\V1\CreatorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/creator', function (Request $request) {
-    return $request->user();
-});
+
+Route::prefix('creator')->get('/create', [CreatorController::class, 'create']);
